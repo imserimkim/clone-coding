@@ -1,43 +1,205 @@
-@import url("../css/common.css");
-main a {
-  margin: 0 auto;
-  overflow: hidden;
-  position: relative;
+@import url("../css/font.css");
+body,
+html,
+p,
+a,
+ul,
+li,
+nav,
+div {
+  margin: 0px;
+  padding: 0px;
 }
-main a ul.artist-image {
-  height: 969px;
-  display: flex;
+
+ol,
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
-main a ul.artist-image li img {
-  -o-object-fit: cover;
-     object-fit: cover;
+
+a {
+  color: #FF3901;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body div.artist-wrap {
   width: 100%;
-  z-index: -999;
-  /*object-position: top;*/
+  height: 100vh;
+  overflow: hidden;
+  top: 4%;
+  z-index: -9999;
 }
-main a div.btn {
-  position: absolute;
+body div.artist-wrap ul.artist-image {
   display: flex;
+  justify-content: center;
+  padding-top: 114px;
+}
+body div.artist-wrap ul.artist-image li {
+  cursor: pointer;
+  width: 50%;
+  height: 100%;
+  flex-shrink: 0;
+}
+body div.artist-wrap ul.artist-image li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+body div.artist-wrap ul.artist-image li a img {
+  height: 100%;
+  min-height: 80vh;
+  max-height: 100vh;
+}
+body div.btn {
+  position: fixed;
   justify-content: space-between;
   top: 50%;
+  transform: translateY(-50%);
   width: 100%;
   padding: 30px;
 }
-main a div.btn div.left-btn {
+body div.btn div.left-btn {
   width: 40px;
 }
-main a div.btn div.left-btn img {
+body div.btn div.left-btn a img {
   width: 100%;
 }
-main a div.btn div.right-btn {
+body div.btn div.right-btn {
   width: 40px;
 }
-main a div.btn div.right-btn img {
+body div.btn div.right-btn a img {
   width: 100%;
 }
-main div.left a ul li {
-  font-family: "NHU";
+body div.container div.menu {
+  width: 350px;
+  z-index: 2;
+  position: fixed;
+  bottom: 23px;
+  left: 32px;
+}
+body div.container div.menu ul li {
+  width: 350px;
+  font-family: "Inter", sans-serif;
   font-size: 4vw;
-  line-height: 1;
+  line-height: 1.15;
   font-weight: 400;
+  list-style-type: none;
+  letter-spacing: -2px;
+  cursor: pointer;
+}
+body div.container div.menu ul li a {
+  position: relative;
+  display: inline-block;
+}
+body div.container div.menu ul li a::after {
+  content: "";
+  display: block;
+  width: 0;
+  bottom: 44%;
+  position: absolute;
+  left: 0;
+  transition: width 0.3s ease-in-out;
+  border-bottom: 0.4vw solid #ff3901;
+}
+body div.container div.menu ul li a:hover::after {
+  width: 105%;
+}
+body div.container div.logo-bottom {
+  width: 21vw;
+  bottom: 18px;
+  transform: translateX(-50%);
+  left: 50vw;
+  text-align: center;
+  position: fixed;
+}
+body div.container div.logo-bottom svg {
+  z-index: 1;
+}
+body div.footer-container {
+  position: fixed;
+  width: 410.42px;
+  right: 26px;
+  bottom: 26px;
+  padding-bottom: 3px;
+  font-weight: 300;
+}
+body div.footer-container ul.sns {
+  font-size: 20px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+body div.footer-container ul.sns li {
+  padding: 0 5 px;
+}
+body div.footer-container ul.sns li.lang-set {
+  padding: 0 0 0 15px;
+  position: relative;
+}
+body div.footer-container ul.sns li.lang-set::before {
+  content: "";
+  top: 8px;
+  display: inline-block;
+  width: 2px;
+  height: 15px;
+  background-color: #ff3901;
+  position: absolute;
+  vertical-align: middle;
+  margin-right: 50px;
+}
+body div.footer-container ul.sns li.lang-set .aa {
+  color: #ff3901;
+  cursor: pointer;
+  margin-left: 25px;
+}
+body div.footer-container ul.sns li.lang-set .aa .lang {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: -50px;
+  opacity: 0;
+}
+body div.footer-container ul.sns li.lang-set .aa:hover .lang {
+  display: block;
+  -webkit-animation: langset 1s forwards;
+          animation: langset 1s forwards;
+}
+body div.footer-container ul.sns li.lang-set .aa:hover li:nth-of-type(2) {
+  -webkit-animation: langset 0.5s forwards;
+          animation: langset 0.5s forwards;
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+body div.footer-container ul.sns li.lang-set .aa:hover li:nth-of-type(1) {
+  -webkit-animation: langset 0.5s forwards;
+          animation: langset 0.5s forwards;
+}
+@-webkit-keyframes langset {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes langset {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  div.logo-top svg {
+    width: 50%;
+  }
 }/*# sourceMappingURL=01.mainpage.css.map */
