@@ -112,6 +112,7 @@ ul.artist-image li:hover h2::after{
 
 
 
+<<<<<<< HEAD
 // .arrow{
 //     position:absolute;
 //     width: 20px;
@@ -127,6 +128,8 @@ ul.artist-image li:hover h2::after{
 
 
 
+=======
+>>>>>>> bfec7153a65510f47a50af1a8a2d15652a2953c7
 
 footer{
     div.copyright{
@@ -159,10 +162,109 @@ footer{
         }
     }
 
+<<<<<<< HEAD
+=======
+    div.footer-container{
+        // position: relative;
+        position: fixed;
+        width: 410.42px;
+        // right: 30px;
+        bottom: 26px;
+        padding-bottom: 3px;
+        font-weight: 300;
+        
+        ul.sns{
+            font-size: 20px;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-around;
+
+            li{
+                padding:0 5 px;
+            }
+
+            li.lang-set{
+                // display: none;
+                padding: 0 0 0 15px;
+                position: relative;
+                &::before{
+                    content: "";
+                    top: 8px;
+                    display: inline-block;
+                    width: 2px;
+                    height: 15px;
+                    background-color: #ff3901;
+                    position: absolute;
+                    // left: -3px;
+                    vertical-align: middle;
+                    margin-right: 50px;
+                }
+
+                .aa{
+                    color:#ff3901;
+                    cursor: pointer;
+                    margin-left: 25px;
+
+                    .lang{
+                        display: none;
+                        position: absolute;
+                        // top:-200%;
+                        // right:-20%;
+                        left: 50%;
+                        top:-50px;
+                        opacity:0;
+                    }
+                }
+                .aa:hover{
+                    .lang{
+                        display: block;
+                        animation: langset 1s forwards;
+                    }
+                }
+
+                .aa:hover li:nth-of-type(2){
+                    animation:  langset 0.5s forwards;
+                    animation-delay: 0.1s;
+                }
+        
+                .aa:hover li:nth-of-type(1){
+                    animation:  langset 0.5s forwards;
+                }
+                }
+        }
+    }
+
+    @keyframes langset {
+        from{
+            opacity: 0;
+        }
+
+        to{
+            opacity:1;
+        }
+    }
+
+>>>>>>> bfec7153a65510f47a50af1a8a2d15652a2953c7
 }
 
 
 
+<<<<<<< HEAD
 @media (max-width:767px) {
     
+=======
+// ************************************** 반응형 ******************************************************//
+
+@media (min-width:769px) and (max-width:1024px) {
+
+}
+
+@media (min-width:521px) and (max-width: 768px) {
+
+}
+
+@media (max-width: 520){
+
+>>>>>>> bfec7153a65510f47a50af1a8a2d15652a2953c7
 }

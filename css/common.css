@@ -67,13 +67,30 @@ body div.menu ul li a::after {
   display: block;
   position: absolute;
   border-bottom: 2px solid #ff3901;
+<<<<<<< HEAD
   right: 0;
+=======
+>>>>>>> bfec7153a65510f47a50af1a8a2d15652a2953c7
   width: 0;
   transition: width 0.4s ease-in-out;
 }
 body div.menu ul li a:hover::after {
   width: 100%;
 }
+<<<<<<< HEAD
+=======
+body div.logo-top {
+  width: 15vw;
+  top: 26px;
+  transform: translateX(-50%);
+  text-align: center;
+  left: 50vw;
+  position: fixed;
+}
+body div.logo-top svg {
+  width: 100%;
+}
+>>>>>>> bfec7153a65510f47a50af1a8a2d15652a2953c7
 body footer div.copyright {
   font-family: "Inter", sans-serif;
   font-size: 12px;
@@ -89,7 +106,11 @@ body footer div.copyright p {
   color: #ff3901;
 }
 body footer div.logo-bottom {
+<<<<<<< HEAD
   width: 270px;
+=======
+  width: 100;
+>>>>>>> bfec7153a65510f47a50af1a8a2d15652a2953c7
   height: 69.89px;
   bottom: 21px;
   transform: translateX(-50%);
@@ -105,10 +126,17 @@ body footer div.logo-bottom svg {
 body footer div.footer-container {
   position: fixed;
   width: 410.42px;
+<<<<<<< HEAD
   right: 30px;
   bottom: 23px;
   padding-bottom: 3px;
   font-weight: 400;
+=======
+  right: 10px;
+  bottom: 26px;
+  padding-bottom: 3px;
+  font-weight: 300;
+>>>>>>> bfec7153a65510f47a50af1a8a2d15652a2953c7
 }
 body footer div.footer-container ul.sns {
   font-size: 20px;
@@ -118,7 +146,11 @@ body footer div.footer-container ul.sns {
   justify-content: space-around;
 }
 body footer div.footer-container ul.sns li {
+<<<<<<< HEAD
   padding: 0 5px;
+=======
+  padding: 0 5 px;
+>>>>>>> bfec7153a65510f47a50af1a8a2d15652a2953c7
 }
 body footer div.footer-container ul.sns li.lang-set {
   padding: 0 0 0 15px;
@@ -130,7 +162,11 @@ body footer div.footer-container ul.sns li.lang-set::before {
   display: inline-block;
   width: 2px;
   height: 15px;
+<<<<<<< HEAD
   background: #ff3901;
+=======
+  background-color: #ff3901;
+>>>>>>> bfec7153a65510f47a50af1a8a2d15652a2953c7
   position: absolute;
   vertical-align: middle;
   margin-right: 50px;
@@ -140,6 +176,7 @@ body footer div.footer-container ul.sns li.lang-set .aa {
   cursor: pointer;
   margin-left: 25px;
 }
+<<<<<<< HEAD
 body footer div.footer-container ul.sns li.lang-set .aa ul.lang {
   position: absolute;
   left: 45%;
@@ -160,6 +197,28 @@ body footer div.footer-container ul.sns .aa:hover li:nth-of-type(2) {
 body footer div.footer-container ul.sns .aa:hover li:nth-of-type(1) {
   -webkit-animation: langset 1s forwards;
           animation: langset 1s forwards;
+=======
+body footer div.footer-container ul.sns li.lang-set .aa .lang {
+  display: none;
+  left: 50%;
+  top: -50px;
+  opacity: 0;
+}
+body footer div.footer-container ul.sns li.lang-set .aa:hover .lang {
+  display: block;
+  -webkit-animation: langset 1s forwards;
+          animation: langset 1s forwards;
+}
+body footer div.footer-container ul.sns li.lang-set .aa:hover li:nth-of-type(2) {
+  -webkit-animation: langset 0.5s forwards;
+          animation: langset 0.5s forwards;
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+body footer div.footer-container ul.sns li.lang-set .aa:hover li:nth-of-type(1) {
+  -webkit-animation: langset 0.5s forwards;
+          animation: langset 0.5s forwards;
+>>>>>>> bfec7153a65510f47a50af1a8a2d15652a2953c7
 }
 @-webkit-keyframes langset {
   from {
@@ -176,4 +235,39 @@ body footer div.footer-container ul.sns .aa:hover li:nth-of-type(1) {
   to {
     opacity: 1;
   }
+<<<<<<< HEAD
+=======
+}
+
+.lang-kor a {
+  position: relative;
+}
+
+.lang-kor a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-bottom: 3px solid #FF3901;
+  bottom: 40%;
+  width: 100%;
+}
+
+.lang-eng a {
+  position: relative;
+}
+
+.lang-eng a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-bottom: 3px solid #FF3901;
+  bottom: 40%;
+  width: 0;
+  left: 0;
+  transition: width 0.4s ease-in-out;
+}
+
+.lang-eng a:hover::after {
+  width: 100%;
+>>>>>>> bfec7153a65510f47a50af1a8a2d15652a2953c7
 }/*# sourceMappingURL=common.css.map */

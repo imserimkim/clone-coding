@@ -1,10 +1,22 @@
 @import url("../css/font.css");
 
+<<<<<<< HEAD
 body,html,p,a,ul,li,nav,div{
+=======
+body,
+html,
+p,
+a,
+ul,
+li,
+nav,
+div {
+>>>>>>> bfec7153a65510f47a50af1a8a2d15652a2953c7
     margin: 0px;
     padding: 0px;
 }
 
+<<<<<<< HEAD
 ol,ul,li{
 	padding: 0;
 	margin:0;
@@ -12,10 +24,22 @@ ol,ul,li{
 }
 
 a{
+=======
+ol,
+ul,
+li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a {
+>>>>>>> bfec7153a65510f47a50af1a8a2d15652a2953c7
     color: #FF3901;
     text-decoration: none;
 }
 
+<<<<<<< HEAD
   * {
         box-sizing: border-box;
     }
@@ -24,12 +48,23 @@ a{
 
 body{
     div.artist-wrap{
+=======
+* {
+    box-sizing: border-box;
+}
+
+
+
+body {
+    div.artist-wrap {
+>>>>>>> bfec7153a65510f47a50af1a8a2d15652a2953c7
         width: 100%;
         height: 100vh;
         overflow: hidden;
         top: 4%;
         // left: 0.2%;   //사진 가운데로
         z-index: -9999;
+<<<<<<< HEAD
         position: fixed;
         border: 2px solid red;
         
@@ -57,11 +92,41 @@ body{
                         height: 100%;
                         border: 2px solid yellow;
                          // object-fit: contain;
+=======
+        // position: fixed;
+
+        ul.artist-image {
+            display: flex;
+            justify-content: center;
+            padding-top: 114px;
+            // transform: scale(1.5);
+
+            li {
+                cursor: pointer;
+                width: 50%;
+                height: 100%;
+                flex-shrink: 0;
+
+                a {
+                    // max-width: 50vw;
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+
+                    img {
+                        // position:absolute;
+                        height: 100%;
+                        min-height: 80vh;
+                        max-height: 100vh;
+                        // width: 100%;5
+                        // object-fit: contain;
+>>>>>>> bfec7153a65510f47a50af1a8a2d15652a2953c7
                     }
                 }
             }
         }
     }
+<<<<<<< HEAD
 
     div.logo-top{
         width: 15vw;
@@ -77,6 +142,24 @@ body{
 
     div.btn{
         display: flex;
+=======
+
+    // div.logo-top {
+    //     width: 15vw;
+    //     top: 26px;
+    //     transform: translateX(-50%);
+    //     text-align: center;
+    //     left: 50vw;
+    //     position: fixed;
+
+    //     svg {
+    //         width: 100%;
+    //     }
+    // }
+
+    div.btn {
+
+>>>>>>> bfec7153a65510f47a50af1a8a2d15652a2953c7
         position: fixed;
         justify-content: space-between;
         top: 50%;
@@ -84,35 +167,59 @@ body{
         width: 100%;
         padding: 30px;
 
-        div.left-btn{
+        div.left-btn {
             width: 40px;
+<<<<<<< HEAD
             a{
                 img{
+=======
+
+            a {
+                img {
+>>>>>>> bfec7153a65510f47a50af1a8a2d15652a2953c7
                     width: 100%;
                 }
             }
         }
 
+<<<<<<< HEAD
         div.right-btn{
             width: 40px;
             a{
                 img{
+=======
+        div.right-btn {
+            width: 40px;
+
+            a {
+                img {
+>>>>>>> bfec7153a65510f47a50af1a8a2d15652a2953c7
                     width: 100%;
                 }
             }
         }
     }
 
+<<<<<<< HEAD
     div.container{
         div.menu{
+=======
+    div.container {
+        div.menu {
+>>>>>>> bfec7153a65510f47a50af1a8a2d15652a2953c7
             width: 350px;
             z-index: 2;
             position: fixed;
             bottom: 23px;
             left: 32px;
 
+<<<<<<< HEAD
             ul{
                 li{
+=======
+            ul {
+                li {
+>>>>>>> bfec7153a65510f47a50af1a8a2d15652a2953c7
                     width: 350px;
                     font-family: 'Inter', sans-serif;
                     font-size: 4.0vw;
@@ -122,14 +229,22 @@ body{
                     letter-spacing: -2px;
                     cursor: pointer;
 
+<<<<<<< HEAD
                     a{
+=======
+                    a {
+>>>>>>> bfec7153a65510f47a50af1a8a2d15652a2953c7
                         position: relative;
                         display: inline-block;
 
                         &::after {
                             content: "";
                             display: block;
+<<<<<<< HEAD
                             width: 0; 
+=======
+                            width: 0;
+>>>>>>> bfec7153a65510f47a50af1a8a2d15652a2953c7
                             bottom: 44%;
                             position: absolute;
                             left: 0;
@@ -138,7 +253,11 @@ body{
                         }
 
                         &:hover {
+<<<<<<< HEAD
                             &::after{
+=======
+                            &::after {
+>>>>>>> bfec7153a65510f47a50af1a8a2d15652a2953c7
                                 width: 105%;
                             }
                         }
@@ -148,18 +267,28 @@ body{
         }
 
 
+<<<<<<< HEAD
         div.logo-bottom{
+=======
+        div.logo-bottom {
+>>>>>>> bfec7153a65510f47a50af1a8a2d15652a2953c7
             width: 21vw;
             bottom: 18px;
             transform: translateX(-50%);
             left: 50vw;
             text-align: center;
             position: fixed;
+<<<<<<< HEAD
             svg{
+=======
+
+            svg {
+>>>>>>> bfec7153a65510f47a50af1a8a2d15652a2953c7
                 z-index: 1;
             }
         }
 
+<<<<<<< HEAD
         div.footer-container{
             position: fixed;
             width: 410.42px;
@@ -214,3 +343,108 @@ body{
         }
     }
 }
+=======
+    }
+
+    div.footer-container {
+        // position: relative;
+        position: fixed;
+        width: 410.42px;
+        right: 26px;
+        bottom: 26px;
+        padding-bottom: 3px;
+        font-weight: 300;
+
+        ul.sns {
+            font-size: 20px;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-around;
+
+            li {
+                padding: 0 5 px;
+            }
+
+            li.lang-set {
+                // display: none;
+                padding: 0 0 0 15px;
+                position: relative;
+
+                &::before {
+                    content: "";
+                    top: 8px;
+                    display: inline-block;
+                    width: 2px;
+                    height: 15px;
+                    background-color: #ff3901;
+                    position: absolute;
+                    // left: -3px;
+                    vertical-align: middle;
+                    margin-right: 50px
+                }
+
+                .aa {
+                    color: #ff3901;
+                    cursor: pointer;
+                    margin-left: 25px;
+
+                    .lang {
+                        display: none;
+                        position: absolute;
+                        // top:-200%;
+                        // right:-20%;
+                        left: 50%;
+                        top: -50px;
+                        opacity: 0;
+                    }
+                }
+
+                .aa:hover {
+                    .lang {
+                        display: block;
+                        animation: langset 1s forwards;
+                    }
+                }
+
+                .aa:hover li:nth-of-type(2) {
+                    animation: langset 0.5s forwards;
+                    animation-delay: 0.1s;
+                }
+
+                .aa:hover li:nth-of-type(1) {
+                    animation: langset 0.5s forwards;
+                }
+            }
+        }
+    }
+
+    @keyframes langset {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+}
+
+// ************************************** 반응형 ******************************************************//
+
+@media (min-width:769px) and (max-width:1024px) {
+
+    div.logo-top svg {
+        width: 50%;
+    }
+}
+
+// div.footer-container{
+//     font-size: 10px;
+// }
+
+
+@media (min-width:521px) and (max-width: 768px) {}
+
+@media (max-width: 520px) {}
+>>>>>>> bfec7153a65510f47a50af1a8a2d15652a2953c7
