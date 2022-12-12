@@ -1,1 +1,34 @@
-/*# sourceMappingURL=05.studiopage.css.map */
+div.logo-top {
+  top: 26px;
+  width: 200px;
+  height: 61.875px;
+  position: fixed;
+  left: 50vw;
+  transform: scale(1.5) translateX(-50%);
+}
+div.logo-top svg {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+div.logo-bottom {
+  width: 270px;
+  height: 69.89px;
+  bottom: 21px;
+  transform: scale(1.5) translateX(-50%);
+  left: 50vw;
+  text-align: center;
+  position: fixed;
+}
+div.logo-bottom svg {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+div.menu ul li a.menu-studio {
+  content: "";
+  display: block;
+  border-bottom: 2px solid blue;
+}/*# sourceMappingURL=05.studiopage.css.map */

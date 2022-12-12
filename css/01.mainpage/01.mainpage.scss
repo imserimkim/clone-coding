@@ -1,77 +1,216 @@
-@import url("../css/common.css");
+@import url("../css/font.css");
+
+body,html,p,a,ul,li,nav,div{
+    margin: 0px;
+    padding: 0px;
+}
+
+ol,ul,li{
+	padding: 0;
+	margin:0;
+	list-style: none;
+}
+
+a{
+    color: #FF3901;
+    text-decoration: none;
+}
+
+  * {
+        box-sizing: border-box;
+    }
 
 
 
-main{
-    a{
-    margin: 0 auto;
-    overflow: hidden;
-    position: relative;
-    
-
-    ul.artist-image{
-            height: 969px;
+body{
+    div.artist-wrap{
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        top: 4%;
+        // left: 0.2%;   //사진 가운데로
+        z-index: -9999;
+        position: fixed;
+        border: 2px solid red;
+        
+        ul.artist-image{
             display: flex;
-
+            padding-top:114px;
+            border: 2px solid blue;
+            // transform: scale(1.5);
+            
             li{
-                img{
-                object-fit: cover;
-                width: 100%;
-                z-index: -999;
-                /*object-position: top;*/
+                cursor: pointer;
+                width: 50vw;
+                height: 100%;
+                border: 2px solid black;
+                a{
+                    // max-width: 50vw;
+                    width: 100%;
+                    height: 100%;
+                    border: 2px solid green;
+                    img{
+                         // position:absolute;
+                        // width: 634px;
+                        height: 73vh;
+                        width: 100%;
+                        height: 100%;
+                        border: 2px solid yellow;
+                         // object-fit: contain;
+                    }
                 }
             }
-
-            
         }
+    }
+
+    div.logo-top{
+        width: 15vw;
+        top: 26px;
+        transform: translateX(-50%);
+        text-align: center;
+        left: 50vw;
+        position: fixed;
+        svg{
+            width: 100%;
+        }
+    }
 
     div.btn{
-        position: absolute;
         display: flex;
+        position: fixed;
         justify-content: space-between;
         top: 50%;
+        transform: translateY(-50%);
         width: 100%;
         padding: 30px;
 
         div.left-btn{
             width: 40px;
-            img{
-                width: 100%;
+            a{
+                img{
+                    width: 100%;
+                }
             }
         }
+
         div.right-btn{
             width: 40px;
-            img{
-                width: 100%;
-            }
-        }
-    }
-    }
-
-    div.left{
-        a{
-            ul{
-                li{
-                    font-family: 'NHU';
-                    font-size: 4.0vw;
-                    line-height: 1;
-                    font-weight: 400;
+            a{
+                img{
+                    width: 100%;
                 }
             }
         }
     }
 
-    div.logo{
-        div.logo-top{
-            a{
-                svg{}
+    div.container{
+        div.menu{
+            width: 350px;
+            z-index: 2;
+            position: fixed;
+            bottom: 23px;
+            left: 32px;
+
+            ul{
+                li{
+                    width: 350px;
+                    font-family: 'Inter', sans-serif;
+                    font-size: 4.0vw;
+                    line-height: 1.15;
+                    font-weight: 400;
+                    list-style-type: none;
+                    letter-spacing: -2px;
+                    cursor: pointer;
+
+                    a{
+                        position: relative;
+                        display: inline-block;
+
+                        &::after {
+                            content: "";
+                            display: block;
+                            width: 0; 
+                            bottom: 44%;
+                            position: absolute;
+                            left: 0;
+                            transition: width 0.3s ease-in-out;
+                            border-bottom: 0.4vw solid #ff3901;
+                        }
+
+                        &:hover {
+                            &::after{
+                                width: 105%;
+                            }
+                        }
+                    }
+                }
             }
         }
+
+
         div.logo-bottom{
-            a{
-                svg{}
+            width: 21vw;
+            bottom: 18px;
+            transform: translateX(-50%);
+            left: 50vw;
+            text-align: center;
+            position: fixed;
+            svg{
+                z-index: 1;
+            }
+        }
+
+        div.footer-container{
+            position: fixed;
+            width: 410.42px;
+            right: 30px;
+            bottom: 21px;
+            padding-bottom: 3px;
+            font-weight: 400;
+
+            ul.sns{
+                font-size: 20px;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: space-around;
+
+                li{
+                    padding: 0 5px;
+                    // a{}
+                }
+                li.lang-set{
+                    padding: 0 0 0 15px;
+                    position: relative;
+                    &::before{
+                    content:"";
+                    top: 8px;
+                    display: inline-block;
+                    width: 2px; 
+                    height: 15px;
+                    background: #ff3901;
+                    position: absolute;
+                    vertical-align: middle;
+                    margin-right: 50px;}
+
+                    div.aa{
+                    color: #ff3901;
+                    cursor: pointer;
+                    margin-left: 25px;
+                    
+                        ul.lang{
+                        position:absolute;
+                        left: 45%;
+                        top: -50px;
+                        display: block;
+                        opacity: 0;
+                            // li{
+                            //     a{}
+                            // }
+                        }
+                    }
+                }
             }
         }
     }
-    
 }

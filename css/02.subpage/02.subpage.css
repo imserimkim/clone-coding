@@ -1,1 +1,127 @@
-/*# sourceMappingURL=02.subpage.css.map */
+@import url("../css/common.css");
+header #menu-artist {
+  content: "";
+  display: block;
+  border-bottom: 2px solid #ff3901;
+}
+
+div.logo-top {
+  top: 26px;
+  width: 200px;
+  height: 61.875px;
+  position: fixed;
+  left: 50vw;
+  transform: translateX(-50%);
+}
+div.logo-top svg {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+section {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+section ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 114px;
+}
+section ul li {
+  width: 33.333%;
+  height: 100%;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+}
+section ul li a {
+  width: 100%;
+  height: 100%;
+}
+section ul li a div {
+  width: 100%;
+  height: 80vh;
+}
+section ul li a div img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+section ul li a div h2 {
+  top: 65%;
+  font-size: 26px;
+  color: #ff3901;
+  z-index: 999;
+  position: absolute;
+  display: block;
+  font-weight: 530;
+  margin-left: 30px;
+}
+
+ul.artist-image li h2::after {
+  content: "";
+  background-image: url("../../images/icons/icon_arrow-orange.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: calc(50% + 1px);
+  right: -30px;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 15px;
+  opacity: 0;
+  transition: 0.3s opacity ease-in-out;
+}
+
+ul.artist-image li::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 3px;
+  background-color: #ff3901;
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: 0.3s transform ease-in-out;
+}
+
+ul.artist-image li:hover::after {
+  transform: scaleY(1);
+  width: 100%;
+}
+
+ul.artist-image li:hover h2::after {
+  opacity: 1;
+}
+
+footer div.copyright {
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  position: fixed;
+  z-index: 1;
+  left: 30px;
+  bottom: 32px;
+}
+footer div.copyright p {
+  width: 100%;
+  height: 100%;
+  display: block;
+  color: #ff3901;
+}
+footer div.logo-bottom {
+  width: 100;
+  height: 69.89px;
+  bottom: 21px;
+  transform: translateX(-50%);
+  left: 50vw;
+  text-align: center;
+  position: fixed;
+}
+footer div.logo-bottom svg {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}/*# sourceMappingURL=02.subpage.css.map */
